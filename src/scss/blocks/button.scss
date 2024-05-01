@@ -1,0 +1,20 @@
+@use '../mixins/hover.scss' as *;
+.button{
+   color: var(--color-white); 
+   font-weight: 700;
+   font-size: 1rem;
+   line-height: 26px;
+   letter-spacing: 2.29px;
+   border-bottom: 4px solid var(--color-green);
+   &--form{
+    background-color: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    margin-left: auto;
+   }
+   @include hover{
+    color: var(--color-green);
+   }
+}

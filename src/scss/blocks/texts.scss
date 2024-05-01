@@ -1,1 +1,31 @@
-
+@use '../mixins/responsive.scss' as *;
+.text{
+    margin: 0;
+    color: var(--color-text);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 26px;
+    @include responsive (tablet){
+        font-size: 1.125rem;
+        line-height: 28px;
+    }
+    &--logo{
+        color: var(--color-white);
+        font-weight: 700;
+        font-size: 2rem;
+        line-height: 32px;
+        letter-spacing: -0.44px;
+    }
+    &--header{
+        margin-bottom: 24px;
+        @include responsive (tablet){
+            margin-bottom: 34px;
+        }
+        @include responsive (laptop){
+            margin-bottom: 66px;
+        }
+    }
+    &--footer{
+        margin-bottom: 50px;
+    }
+}

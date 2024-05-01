@@ -1,0 +1,47 @@
+@use '../mixins/responsive.scss' as *;
+.footer{
+    padding: 60px 16px 60px 16px;
+    background-color: var(--color-darkgrey);
+    text-align: center;
+    background-image: url(../../assets/images/pattern-rings.svg);
+    background-repeat: no-repeat;
+    background-position: -370px 436px;
+    @include responsive (tablet){
+        padding: 60px 30px 40px 30px;
+        background-position: -350px 537px;
+    }
+    @include responsive (laptop){
+        text-align: left;
+        padding: 84px 165px 92px;
+        background-position: -120px 327px;
+    }
+
+    &__info{
+        padding-bottom: 87px;
+        border-bottom: 1px solid var(--color-white);
+        @include responsive (tablet){
+            padding-inline: 162px;
+            padding-bottom: 92px;
+        }
+        @include responsive (laptop){
+           display: flex;
+           padding-inline: 0;
+           gap: 220px;
+        }
+    }
+    &__text{
+        @include responsive (laptop){
+            width: 100%;
+         }
+    }
+    &__end{
+        display: flex;
+        flex-direction: column;
+        padding-top: 39px;
+        gap: 20px;
+        @include responsive (tablet){
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}

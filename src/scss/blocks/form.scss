@@ -1,0 +1,22 @@
+@use '../mixins/responsive.scss' as *;
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    @include responsive (laptop){
+        width: 100%;
+    }
+
+    &__input{
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid var(--color-white);
+        padding: 0 0 17px 24px;
+        width: 100%;
+    }
+    &__input--big{
+        padding-bottom: 80px;
+    }
+}

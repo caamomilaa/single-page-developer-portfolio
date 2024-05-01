@@ -1,4 +1,14 @@
 @use 'base/normalize.scss';
 @use 'base/initial-reset.scss';
 @use 'config/variables.scss';
+
 @use 'blocks/body.scss';
+@use 'blocks/header.scss';
+@use 'blocks/footer.scss';
+
+@use 'blocks/titles.scss';
+@use 'blocks/texts.scss';
+@use 'blocks/button.scss';
+@use 'blocks/socialmedia.scss';
+@use 'blocks/projects.scss';
+@use 'blocks/form.scss';

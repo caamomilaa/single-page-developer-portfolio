@@ -1,0 +1,83 @@
+@use '../mixins/responsive.scss' as *;
+.header{
+    text-align: center;
+    padding: 20px 16px 0 16px;
+    background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg);
+    background-repeat: no-repeat;
+    background-position: -365px 124px, 311px 275px;
+    @include responsive (tablet){
+        text-align: left;
+        padding: 29px 32px 0 32px;
+        background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/image-profile-tablet.webp);
+        background-position: -270px 86px, 700px 471px, top right;
+        background-size: auto, auto, 322px 600px;
+    }
+    @include responsive (laptop){
+        padding: 39px 165px 0 165px;
+        background-image: url(../../assets/images/pattern-rings.svg), url(../../assets/images/pattern-circle.svg), url(../../assets/images/pattern-rings.svg), url(../../assets/images/image-profile-desktop.webp);
+        background-size: auto, auto, auto, 445px 720px;
+        background-position: -100px 124px, 780px 521px, 1070px 1040px, 850px 0;
+    }
+
+    &__top{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        height: 383px;
+        background-image: url(../../assets/images/image-profile-mobile.webp);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        margin-bottom: 40px;
+        @include responsive (tablet){
+            height: 32px;
+            flex-direction: row;
+            justify-content: space-between;
+            background-image: none;
+            align-items: center;
+            margin-bottom: 90px;
+        }
+        @include responsive (laptop){
+            margin-bottom: 127px;
+        }
+    }
+    &__info{
+        padding-bottom: 80px;
+        border-bottom: 1px solid var(--color-white);
+        @include responsive (tablet){
+            padding-bottom: 60px;
+        }
+        @include responsive (laptop){
+            padding-bottom: 219px;
+        }
+    }
+    &__text{
+        @include responsive (tablet){
+            width: 445px;
+        }
+        @include responsive (laptop){
+            width: 706px;
+        }
+    }
+    &__experience{
+        padding-block: 40px;
+        border-bottom: 1px solid var(--color-white);
+        @include responsive (tablet){
+            display: grid;
+            grid-template-columns: repeat(2, 345px) ;
+            grid-template-rows: repeat(3, 98px);
+            border-bottom: none;
+            padding-block: 52px 100px;
+            row-gap: 52px;
+        }
+        @include responsive (laptop){
+            padding-block: 72px 140px;
+            grid-template-columns: repeat(3, 345px) ;
+            grid-template-rows: repeat(2, 98px);
+            row-gap: 58px;
+        }
+    }
+    &__section{
+        margin-bottom: 24px;
+    }
+}

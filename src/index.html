@@ -11,21 +11,31 @@
     <title>single-page-developer-portfolio</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__top">
         <span class="text text--logo">adamkeyes</span>
         <div class="social-media">
-          <img 
-          class="sm__icon" src="./assets/images/icon-github.svg" alt="github">
-          <img class="sm__icon" src="./assets/images/icon-frontend-mentor.svg" alt="frontend-mentor">
-          <img class="sm__icon" src="./assets/images/icon-linkedin.svg" alt="linkedin">
-          <img class="sm__icon" src="./assets/images/icon-twitter.svg" alt="twitter">
+          <a class="sm__link" href="#">
+            <img 
+            class="sm__icon" src="./assets/images/icon-github.svg" alt="github">
+          </a>
+          <a class="sm__link" href="#">
+            <img class="sm__icon" src="./assets/images/icon-frontend-mentor.svg" alt="frontend-mentor">
+          </a>
+          <a class="sm__link" href="#">
+            <img class="sm__icon" src="./assets/images/icon-linkedin.svg" alt="linkedin">
+          </a>
+          <a class="sm__link" href="#">
+            <img class="sm__icon" src="./assets/images/icon-twitter.svg" alt="twitter">
+          </a>
         </div>
       </div>
-      <div class="heaader__info">
-        <h1 class="title title--xl">Nice to meet you! I’m <span class="title title--line">Adam Keyes</span>.</h1>
-        <p class="text">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
-        <a class="button" href="#">CONTACT ME</a>
+      <div class="header__info">
+        <div class="header__text">
+          <h1 class="title title--xl title--header">Nice to meet you! I’m <span class="title title--line">Adam Keyes</span>.</h1>
+          <p class="text text--header">Based in the UK, I’m a front-end developer passionate about building accessible web apps that users love.</p>
+          <a class="button" href="#">CONTACT ME</a>
+        </div>
       </div>
       <section class="header__experience">
         <div class="header__section">
@@ -60,116 +70,118 @@
           <h2 class="title title--xl">Projects</h2>
           <a class="button" href="#">CONTACT ME</a>
         </div>
-        <div class="project">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-1-large.webp">
-            <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-1-small.webp">
-            <img class="project__img" src="./assets/images/thumbnail-project-1-small.webp" alt="project">
-          </picture>
-          <div class="project__item">
-            <h3 class="title title--m">DESIGN PORTFOLIO</h3>
-            <div class="project__text">
-              <span class="text">HTML</span>
-              <span class="text">CSS</span>
+        <div class="project__container">
+          <div class="project">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-1-large.webp">
+              <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-1-small.webp">
+              <img class="project__img" src="./assets/images/thumbnail-project-1-small.webp" alt="project">
+            </picture>
+            <div class="project__item">
+              <h3 class="title title--m">DESIGN PORTFOLIO</h3>
+              <div class="project__text">
+                <span class="text">HTML</span>
+                <span class="text">CSS</span>
+              </div>
+            </div>
+            <div class="project__buttons">
+              <a class="button" href="#">VIEW PROJECT</a>
+              <a class="button" href="#">VIEW CODE</a>
             </div>
           </div>
-          <div class="project__buttons">
-            <a class="button" href="#">VIEW PROJECT</a>
-            <a class="button" href="#">VIEW CODE</a>
-          </div>
-        </div>
-        <div class="project">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-2-large.webp">
-            <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-2-small.webp">
-            <img class="project__img" src="./assets/images/thumbnail-project-2-small.webp" alt="project">
-          </picture>
-          <div class="project__item">
-            <h3 class="title title--m">E-LEARNING LANDING PAGE</h3>
-            <div class="project__text">
-              <span class="text">HTML</span>
-              <span class="text">CSS</span>
+          <div class="project">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-2-large.webp">
+              <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-2-small.webp">
+              <img class="project__img" src="./assets/images/thumbnail-project-2-small.webp" alt="project">
+            </picture>
+            <div class="project__item">
+              <h3 class="title title--m">E-LEARNING LANDING PAGE</h3>
+              <div class="project__text">
+                <span class="text">HTML</span>
+                <span class="text">CSS</span>
+              </div>
+            </div>
+            <div class="project__buttons">
+              <a class="button" href="#">VIEW PROJECT</a>
+              <a class="button" href="#">VIEW CODE</a>
             </div>
           </div>
-          <div class="project__buttons">
-            <a class="button" href="#">VIEW PROJECT</a>
-            <a class="button" href="#">VIEW CODE</a>
-          </div>
-        </div>
-        <div class="project">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-3-large.webp">
-            <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-3-small.webp">
-            <img class="project__img" src="./assets/images/thumbnail-project-3-small.webp" alt="project">
-          </picture>
-          <div class="project__item">
-            <h3 class="title title--m">TODO WEB APP</h3>
-            <div class="project__text">
-              <span class="text">HTML</span>
-              <span class="text">CSS</span>
-              <span class="text">JAVASCRIPT</span>
+          <div class="project">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-3-large.webp">
+              <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-3-small.webp">
+              <img class="project__img" src="./assets/images/thumbnail-project-3-small.webp" alt="project">
+            </picture>
+            <div class="project__item">
+              <h3 class="title title--m">TODO WEB APP</h3>
+              <div class="project__text">
+                <span class="text">HTML</span>
+                <span class="text">CSS</span>
+                <span class="text">JAVASCRIPT</span>
+              </div>
+            </div>
+            <div class="project__buttons">
+              <a class="button" href="#">VIEW PROJECT</a>
+              <a class="button" href="#">VIEW CODE</a>
             </div>
           </div>
-          <div class="project__buttons">
-            <a class="button" href="#">VIEW PROJECT</a>
-            <a class="button" href="#">VIEW CODE</a>
-          </div>
-        </div>
-        <div class="project">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-4-large.webp">
-            <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-4-small.webp">
-            <img class="project__img" src="./assets/images/thumbnail-project-4-small.webp" alt="project">
-          </picture>
-          <div class="project__item">
-            <h3 class="title title--m">ENTERTAINMENT WEB APP</h3>
-            <div class="project__text">
-              <span class="text">HTML</span>
-              <span class="text">CSS</span>
-              <span class="text">JAVASCRIPT</span>
+          <div class="project">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-4-large.webp">
+              <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-4-small.webp">
+              <img class="project__img" src="./assets/images/thumbnail-project-4-small.webp" alt="project">
+            </picture>
+            <div class="project__item">
+              <h3 class="title title--m">ENTERTAINMENT WEB APP</h3>
+              <div class="project__text">
+                <span class="text">HTML</span>
+                <span class="text">CSS</span>
+                <span class="text">JAVASCRIPT</span>
+              </div>
+            </div>
+            <div class="project__buttons">
+              <a class="button" href="#">VIEW PROJECT</a>
+              <a class="button" href="#">VIEW CODE</a>
             </div>
           </div>
-          <div class="project__buttons">
-            <a class="button" href="#">VIEW PROJECT</a>
-            <a class="button" href="#">VIEW CODE</a>
-          </div>
-        </div>
-        <div class="project">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-5-large.webp">
-            <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-5-small.webp">
-            <img class="project__img" src="./assets/images/thumbnail-project-5-small.webp" alt="project">
-          </picture>
-          <div class="project__item">
-            <h3 class="title title--m">MEMORY GAME</h3>
-            <div class="project__text">
-              <span class="text">HTML</span>
-              <span class="text">CSS</span>
-              <span class="text">JAVASCRIPT</span>
+          <div class="project">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-5-large.webp">
+              <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-5-small.webp">
+              <img class="project__img" src="./assets/images/thumbnail-project-5-small.webp" alt="project">
+            </picture>
+            <div class="project__item">
+              <h3 class="title title--m">MEMORY GAME</h3>
+              <div class="project__text">
+                <span class="text">HTML</span>
+                <span class="text">CSS</span>
+                <span class="text">JAVASCRIPT</span>
+              </div>
+            </div>
+            <div class="project__buttons">
+              <a class="button" href="#">VIEW PROJECT</a>
+              <a class="button" href="#">VIEW CODE</a>
             </div>
           </div>
-          <div class="project__buttons">
-            <a class="button" href="#">VIEW PROJECT</a>
-            <a class="button" href="#">VIEW CODE</a>
-          </div>
-        </div>
-        <div class="project">
-          <picture>
-            <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-6-large.webp">
-            <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-6-small.webp">
-            <img class="project__img" src="./assets/images/thumbnail-project-6-small.webp" alt="project">
-          </picture>
-          <div class="project__item">
-            <h3 class="title title--m">ART GALLERY SHOWCASE</h3>
-            <div class="project__text">
-              <span class="text">HTML</span>
-              <span class="text">CSS</span>
-              <span class="text">JAVASCRIPT</span>
+          <div class="project">
+            <picture>
+              <source media="(min-width: 768px)" srcset="./assets/images/thumbnail-project-6-large.webp">
+              <source media="(min-width: 360px)" srcset="./assets/images/thumbnail-project-6-small.webp">
+              <img class="project__img" src="./assets/images/thumbnail-project-6-small.webp" alt="project">
+            </picture>
+            <div class="project__item">
+              <h3 class="title title--m">ART GALLERY SHOWCASE</h3>
+              <div class="project__text">
+                <span class="text">HTML</span>
+                <span class="text">CSS</span>
+                <span class="text">JAVASCRIPT</span>
+              </div>
             </div>
-          </div>
-          <div class="project__buttons">
-            <a class="button" href="#">VIEW PROJECT</a>
-            <a class="button" href="#">VIEW CODE</a>
+            <div class="project__buttons">
+              <a class="button" href="#">VIEW PROJECT</a>
+              <a class="button" href="#">VIEW CODE</a>
+            </div>
           </div>
         </div>
       </section>
@@ -177,24 +189,36 @@
     <footer class="footer">
       <div class="footer__info">
         <div class="footer__text">
-          <h2 class="title title--xl">Contact</h2>
-          <p class="text">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
+          <h2 class="title title--xl title--footer">Contact</h2>
+          <p class="text text--footer">I would love to hear about your project and how I could help. Please fill in the form, and I’ll get back to you as soon as possible.</p>
         </div>
         <div class="form">
           <div class="form__field">
-            <label class="form__label" for="name">NAME</label>
-            <input class="form__input" type="text" id="name" name="name">
+            <input 
+            placeholder="NAME"
+            class="form__input" 
+            type="text" 
+            id="name" 
+            name="name">
           </div>
           <div class="form__field">
-            <label class="form__label" for="email">EMAIL</label>
-            <input class="form__input" type="text" id="email" name="email">
+            <input
+            placeholder="EMAIL"
+            class="form__input" 
+            type="text" 
+            id="email" 
+            name="email">
           </div>
           <div class="form__field">
-            <label class="form__label" for="message">MESSAGE</label>
-            <input class="form__input form__input--big" type="text" id="message" name="message">
+            <input
+            placeholder="MESSAGE"
+            class="form__input form__input--big" 
+            type="text" 
+            id="message" 
+            name="message">
           </div>
           <input
-          class="button"
+          class="button button--form"
           type="submit"
           value="SEND MESSAGE"/>
         </div>
@@ -202,11 +226,19 @@
       <div class="footer__end">
         <span class="text text--logo">adamkeyes</span>
         <div class="social-media">
-          <img 
-          class="sm__icon" src="./assets/images/icon-github.svg" alt="github">
-          <img class="sm__icon" src="./assets/images/icon-frontend-mentor.svg" alt="frontend-mentor">
-          <img class="sm__icon" src="./assets/images/icon-linkedin.svg" alt="linkedin">
-          <img class="sm__icon" src="./assets/images/icon-twitter.svg" alt="twitter">
+          <a class="sm__link" href="#">
+            <img 
+            class="sm__icon" src="./assets/images/icon-github.svg" alt="github">
+          </a>
+          <a class="sm__link" href="#">
+            <img class="sm__icon" src="./assets/images/icon-frontend-mentor.svg" alt="frontend-mentor">
+          </a>
+          <a class="sm__link" href="#">
+            <img class="sm__icon" src="./assets/images/icon-linkedin.svg" alt="linkedin">
+          </a>
+          <a class="sm__link" href="#">
+            <img class="sm__icon" src="./assets/images/icon-twitter.svg" alt="twitter">
+          </a>
         </div>
       </div>
     </footer>
