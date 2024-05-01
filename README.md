@@ -4,7 +4,7 @@
 
 ## Ejemplo en vivo
 
-- [URL-de-github-pages-de-este-proyecto]([URL-de-github-pages-de-este-proyecto](https://caamomilaa.github.io/single-page-developer-portfolio/))
+- [URL-de-github-pages-de-este-proyecto](https://caamomilaa.github.io/single-page-developer-portfolio/)
 
 ## Descripción 📑
 
