@@ -1,73 +1,73 @@
 @use '../mixins/responsive.scss' as *;
 @use '../mixins/hover.scss' as *;
 @use '../mixins/pseudo.scss' as *;
-.projects{
-    padding: 80px 16px 80px 16px;
-    @include responsive (tablet){
-        padding: 52px 32px 100px 32px;
-    }
-    @include responsive (laptop){
-        padding: 72px 170px 139px 170px;
-    }
-    &__top{
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 40px;
-        align-items: center;
-        @include responsive (tablet){
-            margin-bottom: 60px;
-        }
-        @include responsive (laptop){
-            margin-bottom: 80px;
-        }
-    }
-}
-.project{
+.projects {
+  padding: 80px 16px 80px 16px;
+  @include responsive(tablet) {
+    padding: 52px 32px 100px 32px;
+  }
+  @include responsive(laptop) {
+    padding: 72px 170px 139px 170px;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 40px;
-    &__container{
-        @include responsive (tablet){
-            display: grid;
-            grid-template-columns: repeat(2, 342px);
-            grid-template-rows: repeat(3, 398px);
-            column-gap: 24px;
-            row-gap: 60px;
-        }
-        @include responsive (laptop){
-            grid-template-columns: repeat(2, 540px);
-            grid-template-rows: repeat(3, 487px);
-            column-gap: 30px;
-            row-gap: 69px;
-        }
+    align-items: center;
+    @include responsive(tablet) {
+      margin-bottom: 60px;
     }
-    &__item{
-        margin-bottom: 20px;
+    @include responsive(laptop) {
+      margin-bottom: 80px;
     }
-    &__text{
-        display: flex;
-        gap: 18px;
-    }
-    &__buttons{
-        display: flex;
-        gap: 30px;
-        @include responsive (laptop){
-            flex-direction: column;
-            gap: 48px;
-            position: relative;
-            text-align: center;
-            align-items: center;
-            top: -350px;
-            opacity: 0;
-        }
-        @include hover {
-            opacity: 1;
-        }
-    }
+  }
 }
-.project__img{
+.project {
+  margin-bottom: 40px;
+  &__container {
+    @include responsive(tablet) {
+      display: grid;
+      grid-template-columns: repeat(2, 342px);
+      grid-template-rows: repeat(3, 398px);
+      column-gap: 24px;
+      row-gap: 60px;
+    }
+    @include responsive(laptop) {
+      grid-template-columns: repeat(2, 540px);
+      grid-template-rows: repeat(3, 487px);
+      column-gap: 30px;
+      row-gap: 69px;
+    }
+  }
+  &__item {
     margin-bottom: 20px;
-    position: relative;
+  }
+  &__text {
+    display: flex;
+    gap: 18px;
+  }
+  &__buttons {
+    display: flex;
+    gap: 30px;
+    @include responsive(laptop) {
+      flex-direction: column;
+      gap: 48px;
+      position: relative;
+      text-align: center;
+      align-items: center;
+      top: -350px;
+      opacity: 0;
+      z-index: 1;
+    }
+  }
 }
-.project__img::before{
+.project__img {
+  margin-bottom: 20px;
+}
+
+.img__container {
+  position: relative;
+  &::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -76,8 +76,14 @@
     left: 0;
     background-color: rgba(0, 0, 0, 0.5);
     opacity: 0;
-    z-index: 1;
-    @include hover{
-        opacity: 1;
+  }
+  @include hover {
+    &::after {
+      opacity: 1;
     }
+
+    & + .project__item + .project__buttons {
+      opacity: 1;
+    }
+  }
 }
